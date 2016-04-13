@@ -1,0 +1,51 @@
+/// @prop colors
+/// @author Kamal Sharif
+/// @access public
+$colors: (
+    'primary': (
+        'base': #f2ef3b
+    ),
+
+    'secondary': (
+        'base': #99f23a
+    ),
+
+    'accent': (
+        'base': #f2933a
+    ),
+
+    'foreground': (
+        'base': #333,
+        'light': #ccc
+    ),
+
+    'background': (
+        'base': #fff,
+		'dark': #e3e3e3
+    ),
+
+    'border': (
+        'button': #ccc,
+        'form': #ccc
+    ),
+
+    'button': (
+        'save': #0785a5,
+        'cancel': #f2a978,
+        'delete': #d86144
+    ),
+
+    'form': (
+        'success': #12BF16,
+        'error': #d86144
+    )
+) !default;
+
+
+/// @prop colors
+/// @author Kamal Sharif
+/// @access public
+$colors-mix: (
+    'white-mix': #fff,
+    'black-mix': #000
+) !default;

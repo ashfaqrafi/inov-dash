@@ -1,0 +1,55 @@
+$input-success-svg-dimension: 5rem;
+
+
+.frm {
+  &_grp {
+    margin-bottom: 2.5rem;
+
+    &--inline {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      margin-right: 2.5rem;
+
+      .frm {
+        &_success {
+          &--icon {
+            right: -15px;
+          }
+        }
+      }
+    }
+  }
+
+  &_ctrl {
+    @include frm-ctrl();
+  }
+
+  &_error {
+    //scss-lint:disable NestingDepth
+    .frm {
+      &_label {
+        color: map-deep-get($colors, 'form', 'error');
+      }
+
+      &_ctrl {
+        border-color: map-deep-get($colors, 'form', 'error');
+      }
+    }
+  }
+// scss-lint:disable NestingDepth
+  &_success {
+    position: relative;
+
+    &--icon {
+      position: absolute;
+      top: 43px;
+      right: 15px;
+
+      svg {
+        height: $input-success-svg-dimension;
+
+        fill: map-deep-get($colors, 'form', 'success');
+      }
+    }
+  }
+}

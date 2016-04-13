@@ -1,0 +1,81 @@
+// scss-lint:disable NestingDepth
+
+.link {
+    &_hover {
+        &--color {
+            a {
+                transition: color 0.2s linear 0.1s;
+    
+                &:hover {
+                    @include mix-color(map-deep-get($colors, 'foreground', 'base'), 'black-mix', 5%);
+
+                    transition: color 0.2s linear 0.1s;
+                }
+    
+                &:active {
+                    @include mix-color(map-deep-get($colors, 'foreground', 'base'), 'black-mix', 10%);
+                }
+            }
+        }
+        
+        &--bottombar {
+           @include bottombar(); 
+            
+            &-slide {
+                @include bottombar-slide();
+            }
+        }
+        
+        &--topbar {
+            @include topbar(); 
+            
+            &-slide {
+                @include topbar-slide();
+            }
+            
+            &-slideup {
+                @include topbar-slideup();
+            }
+        }
+        
+        &--rightbar {
+           @include rightbar(); 
+        }
+        
+        &--brackets {
+            @include brackets-effect();
+        }
+        
+        &--bottomline {
+            &-slide {
+                @include bottomline-slide(); 
+            }
+            
+            &-enlarge {
+                @include bottomline-enlarge();
+            }
+            
+            &-slidesin {
+                @include bottomline-slidesin();
+            }
+        }
+        
+        &--sametext {
+            @include sametext();
+        }
+        
+        &--textfill {
+            @include textfill();
+        }
+        
+        &--slide3d {
+            @include slide3d();
+        }
+        
+        &--topbottom {
+            &-slidein {
+                @include slidein-both();
+            }
+        }
+    }
+}

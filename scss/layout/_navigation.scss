@@ -1,0 +1,13 @@
+.nav {
+    &_prime {
+        li {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
+        
+        a {
+            display: block;
+            padding: 0.95em;
+        }
+    }
+}

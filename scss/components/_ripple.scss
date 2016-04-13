@@ -1,0 +1,27 @@
+.ripple {
+    &_hidden {
+        position: absolute;
+        
+        height: 0;
+        width: 0;
+        
+        visibility: hidden;
+    }
+    
+    &_show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        
+        height: 100%;
+        width: 100%;
+        
+        pointer-events: none;
+        fill: mix-color(map-deep-get($colors, 'accent', 'base'), 'black-mix', 90%);
+        
+        use {
+            opacity: 0;
+        }
+    }
+}

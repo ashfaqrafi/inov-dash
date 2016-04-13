@@ -1,0 +1,6 @@
+// 1. background shorthand property
+// background: background-color background-image background-repeat background-position
+
+.imghero {
+	@include heroimg('../images/hero.jpg');
+}

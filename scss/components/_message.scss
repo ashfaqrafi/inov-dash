@@ -1,0 +1,5 @@
+.message {
+  &_error {
+    @include font-size-color(1.4rem, map-deep-get($colors, 'form', 'error'));
+  }
+}

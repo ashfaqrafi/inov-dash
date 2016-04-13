@@ -1,0 +1,5 @@
+.overlay {
+	&::before {
+		@include overlay(#cc4428, 0.6);
+	}	
+}

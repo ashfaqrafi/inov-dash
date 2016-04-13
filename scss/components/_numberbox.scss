@@ -1,0 +1,21 @@
+.numberbox {
+    display: inline-block;
+    padding: 2em 2em 1.2em;
+
+    text-align: center;
+    border: 1px solid map-deep-get($colors, 'border', 'form');
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    &_numb {
+        margin-bottom: 0.14em;
+
+        @include type-style($size: 3.5rem, $weight: 700);
+        line-height: 1.5;
+    }
+
+    &_text {
+        margin-bottom: 0;
+
+        line-height: 1.5;
+    }
+}

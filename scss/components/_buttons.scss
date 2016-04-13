@@ -1,0 +1,96 @@
+// scss-lint:disable NestingDepth
+.bttn {
+    @include button();
+    
+    &_default {
+        @include button-default();
+    }
+    
+    &_primary {
+        @include button-primary();
+    }
+    
+    &_save {
+        @include button-save();
+    }
+    
+    &_cancel {
+        @include button-cancel();
+    }
+    
+    &_delete {
+        @include button-delete();
+    }
+    
+    &_hover {
+        &--fill {
+            @include button-hover-fill();
+        }
+        
+        &--sweep {
+            &-right {
+                @include button-hover-sweep-hori();    
+            }
+            
+            &-left {
+                @include button-hover-sweep-hori(100%, 50%); 
+            }
+                
+            &-top {
+                @include button-hover-sweep-vert(); 
+            }
+            
+            &-bottom {
+                @include button-hover-sweep-vert(50%, 0); 
+            }
+        }
+        
+        &--radial {
+            &-out {
+                @include button-hover-radial();
+            }
+            
+            &-in {
+                @include button-hover-radial(2, 0, map-deep-get($colors, 'background', 'base'), map-deep-get($colors, 'foreground', 'base')); 
+            }
+        }
+        
+        &--rectangle {
+            &-out {
+                @include button-hover-radial(0, 1, $border-radius: 0);
+            }
+            
+            &-in {
+                @include button-hover-radial(1, 0, map-deep-get($colors, 'background', 'base'), map-deep-get($colors, 'foreground', 'base'), 0); 
+            }
+        }
+        
+        &--shutterin {
+            &-hori {
+                @include button-hover-shutter-hori(50%, map-deep-get($colors, 'accent', 'base'), map-deep-get($colors, 'background', 'base'), 1, 0);
+            }
+            
+            &-vert {
+                @include button-hover-shutter-vert(50%, map-deep-get($colors, 'accent', 'base'), map-deep-get($colors, 'background', 'base'), 1, 0);
+            }
+        }
+        
+        &--shutterout {
+            &-hori {
+                @include button-hover-shutter-hori();
+            }
+            
+            &-vert {
+                @include button-hover-shutter-vert();
+            }
+        }
+        
+        &--winona {
+            @include button-hover-winona();
+        }
+        
+        &--wayra {
+            @include button-hover-wayra();
+        }
+    }
+}
