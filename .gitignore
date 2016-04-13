@@ -81,7 +81,7 @@ $RECYCLE.BIN/
 *.msp
 
 # Windows shortcuts
-*.ln
+*.lnk
 
 dist
 build
