@@ -1,0 +1,39 @@
+.header{
+  &-area{
+    height: 100vh;
+
+    background-color: #E1F5FE;
+    float: left;
+  }
+  &-collapse{
+    ul{
+      li{
+        padding-left: 20px;
+        a{
+        }
+      }
+    }
+  }
+  &-logo{
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+
+    a{
+      padding: 20px;
+    }
+}
+
+.link{
+  &-areasection{
+
+  }
+  &-area{
+
+  }
+  &-bar{
+    // margin-left: 14%;
+    // height:20%;
+    // background-color: #BDBDBD;
+}
+}

@@ -2228,6 +2228,18 @@ button:focus {
   .remove_mrgn--bottom video {
     margin-bottom: 0; }
 
+.header-area {
+  height: 100vh;
+  background-color: #E1F5FE;
+  float: left; }
+.header-collapse ul li {
+  padding-left: 20px; }
+.header-logo {
+  padding: 20px;
+  margin-bottom: 20px; }
+.header a {
+  padding: 20px; }
+
 .imghero {
   position: relative;
   height: 100vh;
