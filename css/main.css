@@ -2229,16 +2229,39 @@ button:focus {
     margin-bottom: 0; }
 
 .header-area {
-  height: 100vh;
-  background-color: #E1F5FE;
-  float: left; }
+  position: absolute;
+  margin-right: 80%;
+  height: 100%;
+  background-color: #B3E5FC; }
 .header-collapse ul li {
-  padding-left: 20px; }
+  padding-left: 1rem; }
 .header-logo {
-  padding: 20px;
-  margin-bottom: 20px; }
+  top: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem; }
 .header a {
-  padding: 20px; }
+  padding: 1rem; }
+
+.link-bar {
+  background-color: #f3f3f4; }
+.link-minimalize-btn {
+  padding: 4px 12px;
+  margin: 22px 5px 5px 20px;
+  font-size: 14px;
+  float: left; }
+.link-form {
+  margin: 22px 0px 0px 20px;
+  height: 50px;
+  width: 200px;
+  float: left; }
+.link-right ul li {
+  display: inline-block;
+  position: relative; }
+  .link-right ul li a img {
+    height: 30px;
+    width: 30px; }
+.link-myProfile {
+  margin-right: 20px; }
 
 .imghero {
   position: relative;
@@ -3030,5 +3053,7 @@ button:focus {
 .nav_prime a {
   display: block;
   padding: 0.95em; }
+
+/*@ sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

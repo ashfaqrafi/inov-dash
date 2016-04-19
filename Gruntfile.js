@@ -6,7 +6,10 @@ module.exports = function(grunt){
 		  files: {
 			'css/main.css': 'scss/main.scss'
 		  }
-		}
+		},
+		options: {
+			sourcemap: true,
+		},
 	  },
     autoprefixer: {
         options: {

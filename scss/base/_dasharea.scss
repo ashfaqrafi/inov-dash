@@ -1,39 +1,74 @@
 .header{
   &-area{
-    height: 100vh;
+    position: absolute;
 
-    background-color: #E1F5FE;
-    float: left;
+    margin-right: 80%;
+
+    height: 100%;
+
+    background-color: map-deep-get($dashcolors, "background", "base");
   }
   &-collapse{
     ul{
       li{
-        padding-left: 20px;
+        padding-left: 1rem;
         a{
         }
       }
     }
   }
   &-logo{
-    padding: 20px;
-    margin-bottom: 20px;
+    top: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
     }
 
     a{
-      padding: 20px;
+      padding: 1rem;
     }
 }
 
 .link{
-  &-areasection{
-
-  }
-  &-area{
-
-  }
   &-bar{
-    // margin-left: 14%;
-    // height:20%;
-    // background-color: #BDBDBD;
-}
+    background-color: map-deep-get($dashcolors, "background", "top");
+  }
+  &-minimalize-btn{
+    padding: 4px 12px;
+    margin: 22px 5px 5px 20px;
+
+    font-size: 14px;
+
+    float: left;
+  }
+
+  &-form{
+    margin: 22px 0px 0px 20px;
+
+    height: 50px;
+    width: 200px;
+
+    float: left;
+
+  }
+
+  &-right{
+    ul{
+      li{
+        display: inline-block;
+        position: relative;
+        a{
+          img{
+            height: 30px;
+            width: 30px;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  &-myProfile{
+    margin-right: 20px;
+  }
 }
