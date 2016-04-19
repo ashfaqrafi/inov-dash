@@ -9,6 +9,7 @@
 @import 'utils/mixins';
 @import 'utils/placeholders';
 @import 'utils/utilities';
+@import 'utils/dashvariables';
 
 @import 'base/base';
 @import 'base/typography';
@@ -17,6 +18,7 @@
 @import 'base/button';
 @import 'base/label';
 @import 'base/remove-default';
+@import 'base/dasharea';
 
 @import 'components/svg';
 @import 'components/heroimg';
