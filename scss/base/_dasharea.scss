@@ -1,16 +1,18 @@
 .header{
-  &-area{
+  &-side{
     position: absolute;
 
-    margin-right: 80%;
-
     height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+
+    // height: 100vh;
 
     background-color: map-deep-get($dashcolors, "background", "base");
-  }
-  &-collapse{
     ul{
+
       li{
+        display: block;
         padding-left: 1rem;
         a{
         }
@@ -18,9 +20,9 @@
     }
   }
   &-logo{
-    top: 1rem;
-    padding: 1rem;
-    margin-bottom: 3rem;
+      padding: 1rem;
+
+      background-color: map-deep-get($dashcolors, "background", "brand");
     }
 
     a{
@@ -30,6 +32,7 @@
 
 .link{
   &-bar{
+    margin-left: 230px;
     background-color: map-deep-get($dashcolors, "background", "top");
   }
   &-minimalize-btn{
@@ -72,3 +75,18 @@
     margin-right: 20px;
   }
 }
+
+// .bodyfill{
+//   &-area{
+//     margin-left: 230px;
+//     border: 1px solid green;
+//   }
+// }
+//
+// .footer{
+//   &-area{
+//     margin-left: 230px;
+//     border: 1px solid green;
+//
+//   }
+// }

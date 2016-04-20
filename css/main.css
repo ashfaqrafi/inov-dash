@@ -2228,21 +2228,23 @@ button:focus {
   .remove_mrgn--bottom video {
     margin-bottom: 0; }
 
-.header-area {
+.header-side {
   position: absolute;
-  margin-right: 80%;
   height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
   background-color: #B3E5FC; }
-.header-collapse ul li {
-  padding-left: 1rem; }
+  .header-side ul li {
+    display: block;
+    padding-left: 1rem; }
 .header-logo {
-  top: 1rem;
   padding: 1rem;
-  margin-bottom: 3rem; }
+  background-color: #FFF9C4; }
 .header a {
   padding: 1rem; }
 
 .link-bar {
+  margin-left: 230px;
   background-color: #f3f3f4; }
 .link-minimalize-btn {
   padding: 4px 12px;
