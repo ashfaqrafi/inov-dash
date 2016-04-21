@@ -6,10 +6,6 @@
     overflow: auto;
     overflow-y: scroll;
 
-    //change
-    width: 230px;
-    //
-
     // height: 100vh;
 
     background-color: map-deep-get($dashcolors, "background", "base");
@@ -18,23 +14,13 @@
       li{
         display: block;
         padding-left: 1rem;
-        // padding-bottom: 4rem;
         a{
         }
       }
     }
   }
   &-logo{
-    // changed
-      // position: fixed;
-      // background: transparent;
-      // background-color: yellow;
-      // padding-bottom: 4rem;
-    //
-
-
       padding: 1rem;
-      padding-bottom: 4rem;
 
       background-color: map-deep-get($dashcolors, "background", "brand");
     }
@@ -42,17 +28,6 @@
     a{
       padding: 1rem;
     }
-
-    // changed
-    &-profile{
-      position: fixed;
-      // background: transparent;
-    }
-
-    &-board{
-      // margin-top: 75px;
-    }
-    //
 }
 
 .link{

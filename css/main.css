@@ -2233,19 +2233,15 @@ button:focus {
   height: 100%;
   overflow: auto;
   overflow-y: scroll;
-  width: 230px;
   background-color: #B3E5FC; }
   .header-side ul li {
     display: block;
     padding-left: 1rem; }
 .header-logo {
   padding: 1rem;
-  padding-bottom: 4rem;
   background-color: #FFF9C4; }
 .header a {
   padding: 1rem; }
-.header-profile {
-  position: fixed; }
 
 .link-bar {
   margin-left: 230px;
