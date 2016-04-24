@@ -6,6 +6,10 @@
     overflow: auto;
     overflow-y: scroll;
 
+    //change
+    width: 230px;
+    //
+
     // height: 100vh;
 
     background-color: map-deep-get($dashcolors, "background", "base");
@@ -20,7 +24,15 @@
     }
   }
   &-logo{
+    // changed
+      // position: fixed;
+      // background: transparent;
+      // background-color: yellow;
+      //
+
+
       padding: 1rem;
+      padding-bottom: 4rem;
 
       background-color: map-deep-get($dashcolors, "background", "brand");
     }
@@ -28,7 +40,59 @@
     a{
       padding: 1rem;
     }
+
+    // changed
+    &-profile{
+      position: fixed;
+      // background: transparent;
+    }
+
+    &-board{
+      margin-top: 75px;
+    }
+    //
 }
+
+// .nav{
+//   &-label{
+//       cursor: pointer;
+//       display: block;
+//       font-weight: bold;
+//       // line-height: 21px;
+//       // margin-bottom: 5px;
+//
+//     &:hover{
+//       // text-decoration: underline;
+//       transition: all 1s ease;
+//       font-size: 18px;
+//       color: map-deep-get($dashcolors, "background", "hover-color");
+//     }
+//     &::before{
+//       display: block;
+//       float: left;
+//       font-weight: bold;
+//       // height: 20px;
+//       // line-height: 20px;
+//       // margin-right: 5px;
+//       text-align: center;
+//       width: 20px;
+//     }
+//     &:checked{
+//       font-size: 18px;
+//       color: map-deep-get($dashcolors, "background", "hover-color");
+//
+//     }
+//   }
+//   &-second-level{
+//       display: none;
+//       margin-bottom: 10px;
+//     &:checked{
+//       display: block;
+//     }
+//
+//   }
+//
+// }
 
 .link{
   &-bar{
